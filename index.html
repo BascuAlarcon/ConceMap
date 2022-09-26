@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Test</title>
+    <title>ConceMap</title>
 </head>
 <body id="body">   
   <div id="backgr"> 
@@ -101,7 +101,7 @@
 <script>
 
   // create the multimensional array
-  var countVideos = 24;
+  var countVideos = 14;
   var dimensions = new Array(2);
   dimensions[0] = new Array(20);
   dimensions[1] = new Array(20);
@@ -202,6 +202,8 @@
       for (let index2 = 0; index2 < 2; index2++) {
         // get the video id 
         var element = document.getElementById("vid"+index);  
+
+        console.log(index);
 
         // get the dimensions 
         var estilos = window.getComputedStyle(element, null);
