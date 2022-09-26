@@ -146,9 +146,7 @@
       }
       
       element.style.top = dimensions[0][idVideo].toString()+'px';
-      element.style.left = dimensions[1][idVideo].toString()+'px';  
-      // console.log(dimensions[0][idVideo].toString()+'px')
-      // console.log(dimensions[1][idVideo].toString()+'px') 
+      element.style.left = dimensions[1][idVideo].toString()+'px';   
 
       enableAllVideos(id);
     } else {
@@ -178,8 +176,7 @@
   function disableAllVideos(idToKeepShowing){ 
     for (let index = 0; index < countVideos; index++) {
       var element = document.getElementById("vid"+index);   
-      if (element.id != idToKeepShowing) {
-        console.log(element.id);
+      if (element.id != idToKeepShowing) { 
         element.style.display = "none"; 
       }
     }
@@ -189,8 +186,7 @@
   function enableAllVideos(idToKeepShowing){ 
     for (let index = 0; index < countVideos; index++) {
       var element = document.getElementById("vid"+index);   
-      if (element.id != idToKeepShowing) {
-        console.log(element.id);
+      if (element.id != idToKeepShowing) { 
         element.style.display = "inline"; 
       }
     }
@@ -223,7 +219,7 @@
       }
       // be careful: los id de los videos tienen que tener el formato vid1-vid2-vid3, no vid01-vid02-vid03  
     }    
-    getDimensions();
+    // getDimensions();
   }
 
   // get all dimension (purpose only to development)
