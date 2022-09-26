@@ -10,8 +10,8 @@
 <body id="body">   
   <div id="backgr"> 
     <video id="vid5" class="mediumVideo"  autoplay muted loop onclick="goFullscreen('vid5'); return false" class="videos"> 
-      <source src="PREVIA/005.mp4" type="video/mp4">
-      <source src="PREVIA/005.ogg" type="video/ogg">
+      <source src="./PREVIA/005.MP4" type="video/mp4">
+      <source src="./PREVIA/005.ogg" type="video/ogg">
       Your browser does not support the video tag.
     </video>   
 
@@ -201,9 +201,7 @@
     for (let index = 0; index < countVideos; index++) {
       for (let index2 = 0; index2 < 2; index2++) {
         // get the video id 
-        var element = document.getElementById("vid"+index);  
-
-        console.log(index);
+        var element = document.getElementById("vid"+index);   
 
         // get the dimensions 
         var estilos = window.getComputedStyle(element, null);
@@ -225,7 +223,7 @@
       }
       // be careful: los id de los videos tienen que tener el formato vid1-vid2-vid3, no vid01-vid02-vid03  
     }    
-    // getDimensions();
+    getDimensions();
   }
 
   // get all dimension (purpose only to development)
